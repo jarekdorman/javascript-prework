@@ -29,5 +29,22 @@ if(playerInput == '1'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+if (playerMove == 'nieznany ruch'){
+  printMessage('Prosze, wybierz swoj ruch');
+} else if( computerMove == 'kamień' && playerMove == 'papier'){
+  printMessage('Ty wygrywasz!');
+} else if( computerMove == 'kamień' && playerMove == 'nozyce'){
+  printMessage('Komputer wygrywa!');
+} else if( computerMove == 'nozyce' && playerMove == 'papier'){
+  printMessage('Komputer wygrywa!');
+} else if( computerMove == 'nozyce' && playerMove == 'kamien'){
+  printMessage('Ty wygrywasz!');
+} else if( computerMove == 'papier' && playerMove == 'kamien'){
+  printMessage('Komputer wygrywa!');
+} else if( computerMove == 'papier' && playerMove == 'nozyce'){
+    printMessage('Ty wygrywasz!');
+}else if(computerMove == playerMove){
+  printMessage('Remis!');
+}
 
 
