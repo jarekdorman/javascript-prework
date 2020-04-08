@@ -38,8 +38,9 @@ function playGame(playerInput){
 	    return'Wygrywasz!';
 	  }else if (argPlayerMove == argComputerMove){
 	    return'Remis!';
-	  }else 
-	    return 'Przegrywasz :(';
+	  }else {
+      return 'Przegrywasz :(';
+    }
   } 
 
 
