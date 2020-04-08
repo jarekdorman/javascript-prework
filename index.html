@@ -3,12 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<div id="buttons"></div>
-		<div id="messages"></div>
+		<h1>Witamy! Wybierz swoj ruch...</h1>
+		<div id="buttons">
+			<button id="play-rock">
+				<img src="data:image/png;base64,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" alt="">
+			</button>
+			<button id="play-paper">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqB3-mDFQwItcgqrDCcGl7a7GrxDP_VUxEwv0ONW9arVCT2mrh&usqp=CAU" alt="">
+			</button>
+			<button id="play-scissors">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTpQgSulP_9EHERls1D1JzEM7LW6S3Jas8bIhCrhVwre2UXmuee&usqp=CAU" alt="">
+			</button>
+		</div>
+		<div id="messages">
+			
+		</div>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
